@@ -44,6 +44,10 @@ header a {
     color: var(--light-blue);
 }
 
+header nav {
+    margin: 7px 0;
+}
+
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -52,11 +56,19 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li {
+header nav ul li a{
     /* determine padding in Dev Tools */
     font-weight: lighter;
     /* determine font-size in Dev Tools */
 }
+
+/* header nav ul li a:hover {
+    /* add hover elements in after
+} */
+
+/* section {
+    /* determine padding in Dev Tools
+} */
 
 /* hero styling with background image */
 .hero {
@@ -65,4 +77,33 @@ header nav ul li {
     background-position: center;
     background-attachment: fixed;
     background-position: 80%;
+    /* set as flex element */
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* styling of subtitle in the hero section */
+.hero-subtitle {
+    text-align: right;
+}
+
+.section-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.section-title {
+    /* determine font-size in Dev Tools */
+    color: var(--navy-blue);
+    text-align: center;
+    width: 50%;
+    /* determine padding, border, and margin in Dev Tools */
+}
+
+.about {
+    width: 50%;
 }
