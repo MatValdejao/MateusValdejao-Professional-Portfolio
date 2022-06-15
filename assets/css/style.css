@@ -92,7 +92,7 @@ header nav ul li a{
 .section-flex {
     display: flex;
     /* reeavalute the justify-content after having setup more of the css */
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -100,13 +100,13 @@ header nav ul li a{
     /* determine font-size in Dev Tools */
     color: var(--navy-blue);
     width: 25%; 
-    flex: 1 auto;
+    flex: 1;
     /* determine padding, border, and margin in Dev Tools */
 }
 
 .non-title {
     max-width: 75%;
-    flex: 1 auto;
+    flex: 1;
     /* add padding and border */
 }
 
