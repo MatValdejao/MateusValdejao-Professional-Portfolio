@@ -4,6 +4,7 @@
     --dark-gray: #565656;
     --light-gray: #d3d3d3;
     --navy-blue: #202a44;
+    --black: black;
 }
 
 * {
@@ -24,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* padding and margins will be added first in DevTools to examine effects */
+    padding: 10px 0;
     background-color: var(--dark-gray);
     position: -webkit-sticky;
     position: sticky;
@@ -34,14 +35,16 @@ header {
 
 header h1 {
     font-weight: bold;
-    /* font-size determined in Dev Tools */
-    color: var(--light-blue);
+    font-size: 36px;
+    background: var(--light-blue);
     margin: 0;
+    padding-right: 10px;
 }
 
-header a {
+header h1 a {
     text-decoration: none;
-    color: var(--light-blue);
+    color: var(--dark-gray);
+    margin-left: 50px;
 }
 
 header nav {
@@ -54,17 +57,25 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    margin-right: 50px;
 }
 
-header nav ul li a{
-    /* determine padding in Dev Tools */
+header nav ul li a {
+    padding: 5px 7px;
+    margin: 5px;
+    text-decoration: none;
     font-weight: lighter;
-    /* determine font-size in Dev Tools */
+    color: var(--light-blue);
+    font-size: 1.2vw;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-bottom: solid 2px var(--light-blue);
 }
 
-/* header nav ul li a:hover {
-    /* add hover elements in after
-} */
+header nav ul li a:hover {
+    color: var(--dark-gray);
+    background: var(--light-blue);
+    text-shadow: none;
+} 
 
 /* section {
     /* determine padding in Dev Tools
@@ -87,6 +98,7 @@ header nav ul li a{
 /* styling of subtitle in the hero section */
 .hero-subtitle {
     text-align: right;
+    background-color: var(--light-blue);
 }
 
 .section-flex {
