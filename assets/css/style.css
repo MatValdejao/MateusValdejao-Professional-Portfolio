@@ -16,7 +16,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--navy-blue);
-
+    background-color: var(--light-gray);
 }
 
 /* header stylistic elements */
@@ -91,19 +91,41 @@ header nav ul li a{
 
 .section-flex {
     display: flex;
+    /* reeavalute the justify-content after having setup more of the css */
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .section-title {
     /* determine font-size in Dev Tools */
     color: var(--navy-blue);
-    text-align: center;
-    width: 50%;
+    width: 25%; 
+    flex: 1 auto;
     /* determine padding, border, and margin in Dev Tools */
 }
 
-.about {
-    width: 50%;
+.non-title {
+    max-width: 75%;
+    flex: 1 auto;
+    /* add padding and border */
+}
+
+/* have to remember to constrain the size of the image box */
+.large-image img {
+    max-width: 100%;
+}
+
+/* work-image parent defined size */
+
+.double-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* define padding and margin in Dev Tools */
+}
+
+.work-image img {
+    flex: 1 50%;
+    max-width: 100%;
+    /* defined padding and border in Dev Tools */
 }
