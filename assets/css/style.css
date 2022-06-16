@@ -101,7 +101,6 @@ address a:hover, address p:hover {
     background: var(--navy-blue);
 }
 
-
 /* hero styling with background image */
 .hero {
     padding-top: 200px;
@@ -162,8 +161,13 @@ address a:hover, address p:hover {
     width: 100%;
     height: 100%;
     background-image: url(../images/runbuddy.png);
+    opacity: 0.8;
     background-size: cover;
     border: solid 3px var(--light-blue);
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5px;
+    text-decoration: none;
 }
 
 /* work-image parent defined size */
@@ -172,7 +176,7 @@ address a:hover, address p:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 100px;
+    height: 150px;
     width: 100%;
     /* define padding and margin in Dev Tools */
 }
@@ -188,24 +192,48 @@ address a:hover, address p:hover {
     height: 100%;
     width: 100%;
     border: solid 3px var(--light-blue);
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.work-image a div, .large-image a div {
+    margin-bottom: 10px;
+    background: var(--light-blue);
+    color: var(--navy-blue);
+    font-size: 1.0vw;
+    padding: 5px
+}
+
+.work-image a div p, .large-image a div p {
+    margin-top: 5px;
+    font-size: small;
 }
 
 #horiseon {
     background-image: url(../images/Horiseon.png);
+    opacity: 0.8;
     background-size: cover;
 }
 
 #robot-gladiators {
     background-image: url(../images/robot-glad.png);
+    opacity: 0.8;
     background-size: cover;   
 }
 
 #comp-application {
     background-image: url(../images/comp.png);
+    opacity: 0.8;
     background-size: cover;
 }
 
 #bramun-study-guide {
     background-image: url(../images/Study-guide.png);
+    opacity: 0.8;
     background-size: cover;
+}
+
+.large-image a:hover, #horiseon:hover, #robot-gladiators:hover, #comp-application:hover, #bramun-study-guide:hover {
+    opacity: 1;
 }
