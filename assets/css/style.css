@@ -117,6 +117,7 @@ address a:hover, address p:hover {
 /* styling of subtitle in the hero section */
 .hero-subtitle {
     font-size: 1.7vw;
+    margin-right: 30px;
     padding: 5px;
     color: var(--dark-gray);
     background-color: var(--light-blue);
