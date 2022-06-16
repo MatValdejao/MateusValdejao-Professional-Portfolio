@@ -77,17 +77,16 @@ header nav ul li a:hover {
     text-shadow: none;
 } 
 
-/* section {
-    /* determine padding in Dev Tools
-} */
+section {
+   padding: 20px; 
+}
 
 /* hero styling with background image */
 .hero {
+    padding-top: 200px;
     background-image: url(../images/foto.png);
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
+    background-position: center 25%;
     /* set as flex element */
     display: flex;
     justify-content: right;
@@ -97,34 +96,53 @@ header nav ul li a:hover {
 
 /* styling of subtitle in the hero section */
 .hero-subtitle {
-    text-align: right;
+    font-size: 1.7vw;
+    padding: 5px;
+    color: var(--dark-gray);
     background-color: var(--light-blue);
 }
 
 .section-flex {
     display: flex;
     /* reeavalute the justify-content after having setup more of the css */
-    justify-content: space-around;
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
 
 .section-title {
     /* determine font-size in Dev Tools */
     color: var(--navy-blue);
-    width: 25%; 
+    margin-right: 10px;
+    font-size: 36px;
     flex: 1;
-    /* determine padding, border, and margin in Dev Tools */
+}
+
+.border-left {
+    border-left: solid 2px var(--navy-blue);
+    padding-left: 30px;
 }
 
 .non-title {
-    max-width: 75%;
+    max-width: 85%;
     flex: 1;
+    margin-right: 30px;
     /* add padding and border */
 }
 
-/* have to remember to constrain the size of the image box */
-.large-image img {
-    max-width: 100%;
+.large-image {
+   padding: 5px 0;
+   width: 100%;
+   height: 300px;
+   display: flex;
+}
+
+/* sets the background a tag as a "box" for background image */
+.large-image a {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/runbuddy.png);
+    background-size: cover;
+    border: solid 3px var(--light-blue);
 }
 
 /* work-image parent defined size */
@@ -133,11 +151,40 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 100px;
+    width: 100%;
     /* define padding and margin in Dev Tools */
 }
 
-.work-image img {
-    flex: 1 50%;
-    max-width: 100%;
-    /* defined padding and border in Dev Tools */
+.work-image {
+    padding: 5px 0;
+    width: 49%;
+    height: 100%;
+    display: flex;
+}
+
+.work-image a {
+    height: 100%;
+    width: 100%;
+    border: solid 3px var(--light-blue);
+}
+
+#horiseon {
+    background-image: url(../images/Horiseon.png);
+    background-size: cover;
+}
+
+#robot-gladiators {
+    background-image: url(../images/robot-glad.png);
+    background-size: cover;   
+}
+
+#comp-application {
+    background-image: url(../images/comp.png);
+    background-size: cover;
+}
+
+#bramun-study-guide {
+    background-image: url(../images/Study-guide.png);
+    background-size: cover;
 }
