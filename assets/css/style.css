@@ -81,6 +81,27 @@ section {
    padding: 20px; 
 }
 
+address {
+    display: flex;
+    font-style: normal;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+address a, address p {
+    text-decoration: none;
+    color: var(--navy-blue);
+    padding: 3px;
+    border-bottom: solid 2px var(--navy-blue);
+}
+
+address a:hover, address p:hover {
+    color: var(--light-blue);
+    background: var(--navy-blue);
+}
+
+
 /* hero styling with background image */
 .hero {
     padding-top: 200px;
