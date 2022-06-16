@@ -63,7 +63,7 @@ header nav ul li a {
     text-decoration: none;
     font-weight: lighter;
     color: var(--light-blue);
-    font-size: 1.2vw;
+    font-size: 1.6vw;
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     border-bottom: solid 2px var(--light-blue);
 }
@@ -241,7 +241,23 @@ address a:hover, address p:hover {
 }
 
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width:980px) {
+    .section-title {
+        font-size: 22px;
+    }
+}
 
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width:768px) {
+    .section-title {
+        font-size: 16px;
+    }
+    
+    .non-title {
+        font-size: small;
+    }
+}
 
 /* MEDIA QUERY FOR MOBILE AND SMALLER SCREENS */
 
