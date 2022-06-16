@@ -1,9 +1,9 @@
 /* define variables */
 :root {
-    --light-blue: #39a6b2;
-    --dark-gray: #565656;
-    --light-gray: #d3d3d3;
-    --navy-blue: #202a44;
+    --light-blue: rgb(146, 210, 213);
+    --dark-gray: rgb(44, 44, 46);
+    --light-gray: #d3d3d3dd;
+    --navy-blue: rgb(68, 80, 121);
     --black: black;
 }
 
@@ -27,8 +27,6 @@ header {
     flex-wrap: wrap;
     padding: 10px 0;
     background-color: var(--dark-gray);
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     z-index: 9999;
 }
@@ -37,7 +35,6 @@ header h1 {
     font-weight: bold;
     font-size: 36px;
     background: var(--light-blue);
-    margin: 0;
     padding-right: 10px;
 }
 
@@ -89,11 +86,15 @@ address {
     align-items: center;
 }
 
-address a, address p {
+address div {
+    margin-bottom: 10px;
+}
+
+address a, address span {
     text-decoration: none;
-    color: var(--navy-blue);
+    color: var(--dark-gray);
     padding: 3px;
-    border-bottom: solid 2px var(--navy-blue);
+    border-bottom: solid 3px var(--navy-blue);
 }
 
 address a:hover, address p:hover {
@@ -201,9 +202,9 @@ address a:hover, address p:hover {
 .work-image a div, .large-image a div {
     margin-bottom: 10px;
     background: var(--light-blue);
-    color: var(--navy-blue);
+    color: var(--dark-gray);
     font-size: 1.0vw;
-    padding: 5px
+    padding: 5px;
 }
 
 .work-image a div p, .large-image a div p {
@@ -237,4 +238,95 @@ address a:hover, address p:hover {
 
 .large-image a:hover, #horiseon:hover, #robot-gladiators:hover, #comp-application:hover, #bramun-study-guide:hover {
     opacity: 1;
+}
+
+
+/* MEDIA QUERY FOR MOBILE AND SMALLER SCREENS */
+
+@media screen and (max-width:575px) {
+    header {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    header h1 {
+        width: 100%;
+        background: var(--light-blue);
+    }
+
+    header nav {
+        width: 100%
+    }
+
+    header nav ul {
+        text-align: center;
+        margin: 0px;
+        justify-content: space-evenly;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .hero {
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+        margin-right: 0px;
+    }
+
+    .section-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .section-flex div {
+        width: 100%;
+    }
+
+    .section-title {
+        border-bottom: solid 3px var(--navy-blue);
+        margin-bottom: 15px;
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .border-left {
+        border-left: none;
+        padding-left: 0px;
+    }
+
+    .non-title {
+        font-size: smaller;
+        margin-right: 0px;
+        max-width: 100%;
+    }
+
+    .large-image {
+        height: 100%;
+    }
+
+    .double-image {
+        height: 100%;
+    }
+
+    .work-image a div, .large-image a div {
+        width: 20%;
+        margin-top: 10px;
+        margin-bottom: none;
+    }
+
+    .work-image a div h3, .large-image a div h3{
+        font-size: 10px;
+    }
+
+    .work-image a div p, .large-image a div p {
+        font-size: 8px
+    }
 }
