@@ -12,4 +12,7 @@ Furthermore, the website gives a snapshot of past and current (in development) p
  ## Website
  https://matvaldejao.github.io/MateusValdejao-Professional-Portfolio/
 
+ ## Website Screenshot
+ ![image](./assets/images/portfolio.png)
+
  ### Mateus Valdejão Professional Portfolio
