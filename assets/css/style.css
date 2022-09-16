@@ -162,7 +162,7 @@ address a:hover, address p:hover {
 .large-image a {
     width: 100%;
     height: 100%;
-    background-image: url(../images/movie-mate.png);
+    background-image: url(../images/gift-pilot.png);
     opacity: 0.8;
     background-size: cover;
     border: solid 3px var(--light-blue);
@@ -231,7 +231,7 @@ address a:hover, address p:hover {
 }
 
 #bramun-study-guide {
-    background-image: url(../images/Study-guide.png);
+    background-image: url(../images/movie-mate.png);
     opacity: 0.8;
     background-size: cover;
 }
