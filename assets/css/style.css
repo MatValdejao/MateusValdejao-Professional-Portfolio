@@ -209,7 +209,7 @@ address a:hover, address p:hover {
 
 .work-image a div p, .large-image a div p {
     margin-top: 5px;
-    font-size: small;
+    font-size: smaller;
 }
 
 #horiseon {
